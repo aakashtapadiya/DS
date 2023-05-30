@@ -1,0 +1,11 @@
+new project java web web appn glassfish4.1.1
+new webservice add func
+build -> deploy
+test web service
+
+new proj for client
+index.html -> form and action ClientServlet
+new web service client and select our calcservice prev created
+
+new Servlet->CalcServlet
+drag and drop
