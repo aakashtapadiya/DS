@@ -1,0 +1,13 @@
+cd CORBA 
+
+idlj -fall ReverseModule.idl
+
+javac *.java ReverseModule/*.java
+
+orbd -ORBInitialPort 1050&
+
+
+Server-> java ReverseServer -ORBInitialPost 1050& -ORB InitialHost localhost&
+-ORBInitialHost :
+
+Client -> java ReverseClient -ORBInitialPort 1050 -ORBInitialHost localhost
